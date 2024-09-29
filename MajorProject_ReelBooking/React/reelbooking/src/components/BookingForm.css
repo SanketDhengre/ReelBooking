@@ -1,0 +1,145 @@
+/* BookingForm.css */
+
+/* Seat grid container */
+.seat-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Individual row within the seat grid */
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling for each seat */
+/* BookingForm.css */
+
+/* Styling for each seat */
+.seat {
+    width: 45px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 40%; /* Border radius to make seats circular */
+    transition: background-color 0.3s ease, transform 0.2s ease, border-radius 0.3s ease; /* Added transition for border-radius */
+    position: relative; /* Positioning for additional elements */
+}
+
+/* Manual styling for seat appearance */
+/* .seat::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 2px;
+    bottom: -12px;
+}
+
+.seat::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 2px;
+    top: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+
+/* Style for available seats */
+.seat.available {
+    background-color: #d43838; /* Red */
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for booked seats */
+.seat.booked {
+    background-color: #A9A9A9;
+    color: #fff;
+}
+
+/* Style for selected seats */
+.seat.selected {
+    background-color: #2196F3; /* Blue */
+    color: #fff;
+    border: 2px solid #fff; /* White border for better visibility */
+    transform: scale(1.05); /* Enlarge slightly when selected */
+    border-radius: 50%; /* Border radius for selected seats */
+}
+
+/* Style for selected seats on hover */
+.seat.selected:hover {
+    background-color: #1976d2; /* Darker blue when hovered */
+}
+
+/* Styling for the screen */
+#screen {
+    width: 60%;
+    margin: 15px auto;
+    color: #ffffff;
+    border: 1px solid #e6e6e6; /* Lighter border color */
+    background: linear-gradient(to bottom, #444343, #444343); /* BookMyShow red gradient */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px; /* Increased padding */
+    font-family: 'Roboto', sans-serif; /* BookMyShow font family */
+}
+
+/* Heading style */
+#screen h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Button style */
+#screen button {
+    background-color: #ff6f61; /* BookMyShow button color */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#screen button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Input style */
+#screen input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Link style */
+#screen a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#screen a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main form container */
+.mainForm {
+    text-align: center;
+}

@@ -1,0 +1,35 @@
+.custom-card {
+    width: 300px; /* Increased width */
+    background-color: #e4e4e4;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-card .card-body {
+    padding: 20px;
+  }
+  
+  .custom-card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .custom-card img {
+    border-radius: 15px 15px 0 0;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .custom-card button {
+    margin-top: 10px;
+  }
+  
+  .custom-card button:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+  .custom-card button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  }
+  

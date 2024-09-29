@@ -1,0 +1,18 @@
+/* styles.css */
+.container-right {
+  padding: 20px;
+  /* background-color: rgb(148, 147, 147); */
+}
+
+.container-right p,
+.container-right label,
+.container-right button {
+  font-weight: bold;
+}
+
+
+.image-left {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
